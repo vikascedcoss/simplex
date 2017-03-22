@@ -7,6 +7,10 @@ body,html{
 	color:#fff;
 	font-family:signika;
 }
+/*==========================================
+=            Section navigation            =
+==========================================*/
+
 #navigation{
 	background-color:#334960;
 	position:fixed;
@@ -22,6 +26,12 @@ body,html{
 		@include menu-items;
 	}
 }
+/*=====  End of Section navigation  ======*/
+
+
+/*======================================
+=            Section Header            =
+======================================*/
 
 #header{
 	background-color:#334960;
@@ -30,7 +40,6 @@ body,html{
 	.header-content{
 		@include section-center;
 	}
-	// @include main-fonts("Signika", '../fonts/signika/Signika-Regular.eot');
 	ul{
 		margin:100px 0;
 		.menus{
@@ -61,6 +70,12 @@ body,html{
 		z-index: 700;
 	}	
 }
+/*=====  End of Section Header  ======*/
+
+
+/*============================================
+=            Section Professional            =
+============================================*/
 #professional-section{
 	background-color:#F17C72;
 	padding:80px 0;
@@ -154,6 +169,12 @@ body,html{
 		z-index: 700;
 	}	
 }
+/*=====  End of Section Professional  ======*/
+
+
+/*=======================================
+=            Section Service            =
+=======================================*/
 #service-section{
 	background-color:#32AC97;
 	padding:80px 0;
@@ -208,7 +229,12 @@ body,html{
 		z-index: 700;
 	}	
 }
+/*=====  End of Section Service  ======*/
 
+
+/*======================================
+=            Section Client            =
+======================================*/
 #client-section{
 	background-color:#7F4C76;
 	padding:80px 0;
@@ -252,7 +278,12 @@ body,html{
 		z-index: 700;
 	}	
 }
+/*=====  End of Section Client  ======*/
 
+
+/*=======================================
+=            Section contact            =
+=======================================*/
 #contact-section{
 	background-color:#3F9FC9;
 	padding:80px 0;
@@ -322,4 +353,5 @@ body,html{
 		}
 	}	
 }
+/*=====  End of Section contact  ======*/
 

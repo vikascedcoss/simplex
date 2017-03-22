@@ -9,6 +9,9 @@ body, html {
   color: #fff;
   font-family: signika; }
 
+/*==========================================
+=            Section navigation            =
+==========================================*/
 #navigation {
   background-color: #334960;
   position: fixed;
@@ -25,6 +28,10 @@ body, html {
     text-decoration: none;
     font-size: 20px; }
 
+/*=====  End of Section navigation  ======*/
+/*======================================
+=            Section Header            =
+======================================*/
 #header {
   background-color: #334960;
   padding: 80px 0;
@@ -71,6 +78,10 @@ body, html {
     width: 0;
     z-index: 700; }
 
+/*=====  End of Section Header  ======*/
+/*============================================
+=            Section Professional            =
+============================================*/
 #professional-section {
   background-color: #F17C72;
   padding: 80px 0;
@@ -151,6 +162,10 @@ body, html {
     width: 0;
     z-index: 700; }
 
+/*=====  End of Section Professional  ======*/
+/*=======================================
+=            Section Service            =
+=======================================*/
 #service-section {
   background-color: #32AC97;
   padding: 80px 0;
@@ -202,6 +217,10 @@ body, html {
     width: 0;
     z-index: 700; }
 
+/*=====  End of Section Service  ======*/
+/*======================================
+=            Section Client            =
+======================================*/
 #client-section {
   background-color: #7F4C76;
   padding: 80px 0;
@@ -241,6 +260,10 @@ body, html {
     width: 0;
     z-index: 700; }
 
+/*=====  End of Section Client  ======*/
+/*=======================================
+=            Section contact            =
+=======================================*/
 #contact-section {
   background-color: #3F9FC9;
   padding: 80px 0;
@@ -297,5 +320,7 @@ body, html {
       background-color: #F17C72;
       border: none;
       padding: 3px 20px; }
+
+/*=====  End of Section contact  ======*/
 
 /*# sourceMappingURL=style.css.map */
