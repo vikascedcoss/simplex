@@ -241,4 +241,61 @@ body, html {
     width: 0;
     z-index: 700; }
 
+#contact-section {
+  background-color: #3F9FC9;
+  padding: 80px 0;
+  position: relative; }
+  #contact-section .contact-content {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto; }
+    #contact-section .contact-content h2 {
+      font-size: 35px; }
+    #contact-section .contact-content p {
+      font-size: 17px;
+      padding-top: 25px; }
+  #contact-section .contact-content-wrapper {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    margin: 80px auto; }
+    #contact-section .contact-content-wrapper .contact-address {
+      text-transform: capitalize;
+      font-size: 12px;
+      font-weight: normal; }
+      #contact-section .contact-content-wrapper .contact-address .contact-numbers {
+        margin-top: 30px;
+        margin-bottom: 0;
+        font-size: 12px;
+        font-weight: normal; }
+        #contact-section .contact-content-wrapper .contact-address .contact-numbers dt {
+          width: 70px;
+          float: left;
+          font-size: 12px;
+          font-weight: normal; }
+      #contact-section .contact-content-wrapper .contact-address .contact-social-media dt {
+        float: left;
+        font-size: 12px;
+        font-weight: normal; }
+    #contact-section .contact-content-wrapper .contact-form input {
+      width: 49%;
+      color: #000;
+      font-size: 12px;
+      font-weight: normal; }
+    #contact-section .contact-content-wrapper .contact-form textarea {
+      margin-top: 10px;
+      width: 99%;
+      color: #000;
+      font-size: 12px;
+      font-weight: normal; }
+    #contact-section .contact-content-wrapper .contact-form button {
+      display: block;
+      margin: 10px auto 0;
+      color: #fff;
+      font-size: 12px;
+      font-weight: normal;
+      background-color: #F17C72;
+      border: none;
+      padding: 3px 20px; }
+
 /*# sourceMappingURL=style.css.map */
