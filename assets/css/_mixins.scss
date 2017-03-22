@@ -1,0 +1,39 @@
+@mixin menu-items{
+	padding:10px 20px;
+	color:#fff;
+	text-transform:capitalize;
+	text-decoration:none;
+	font-size:20px;
+}
+
+@mixin main-fonts($font-family, $file-path, $weight: normal, $style: normal, $asset-pipeline: false ) {
+  @font-face {
+    font-family: $font-family;
+    src: url($file-path);
+    font-weight: $weight;
+	font-style: $style;
+
+	}
+}
+
+@mixin round-border($border-radius){
+	-webkit-border-radius:$border-radius;
+	-moz-border-radius:$border-radius;
+	-ms-border-radius:$border-radius;
+	-o-border-radius:$border-radius;
+	border-radius:$border-radius;
+	border:2px solid #fff;
+}
+
+@mixin animation-shadow{
+  transform: scale(1.1);
+  transition: 100ms linear all;
+  box-shadow: 0 0 15px #fff;
+  color:#fff;
+}
+
+@mixin section-center{
+	max-width:960px;
+	width:100%;
+	margin:0 auto;
+}
