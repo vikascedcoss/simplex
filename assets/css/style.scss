@@ -1,10 +1,11 @@
 @import "mixins";
 @import "variable";
+@include font-face("signika",'../fonts/signika/Signika-Regular', 500, normal, eot woff2 woff);
 body,html{
 	margin:0;
 	padding:0;
 	color:#fff;
-	@include main-fonts("Signika", '../fonts/signika/Signika-Regular.eot');
+	font-family:signika;
 }
 #navigation{
 	background-color:#334960;
@@ -103,10 +104,14 @@ body,html{
 			  text-transform: capitalize;
 			  font-weight: bold;
 			  margin:80px 0;
+			  .professional-image-wrapper{
+			  	padding:20px;
+			  }
 			  .boximg {
 				  border: 3px solid #f4948b;
 				  border-radius: 50%;
 				  margin-top: 20px;
+				  width: 100%;
 				  &:hover{
 				  	box-shadow: 0 0 10px #fff;
 				  	color: #fff;
@@ -149,3 +154,102 @@ body,html{
 		  z-index: 700;
 		}	
 	}
+#service-section{
+	background-color:#32AC97;
+	padding:80px 0;
+	position: relative;
+	.service-content{
+		@include section-center;
+		h2{
+			font-size: 35px;
+		}
+		p {
+		  font-size: 17px;
+		  padding-top: 25px;
+		}
+	}
+	.service-image{
+		@include section-center;
+		.service-images{		
+			  background-color: #46DCC7;
+			  border: 3px solid #99D6CB;
+			  text-transform: capitalize;
+			  font-weight: bold;
+			  margin:80px 0;
+			  .service-image-wrapper{
+			  	padding:20px;
+			  }
+			  .boximg {
+				 	@include service-image;
+				 	width:100%;
+				  &:hover{
+				  	box-shadow: 0 0 15px #fff;
+				  	color: #fff;
+				  	transition: all 100ms linear 0s;
+				  }
+				}
+				p{
+					font-size:10px;
+					font-weight: normal;
+				}
+			}
+		}
+		&:after{
+		  border-left: 40px solid rgba(0, 0, 0, 0);
+		  border-right: 40px solid rgba(0, 0, 0, 0);
+		  border-top: 40px solid #32AC97;
+		  bottom: -40px;
+		  content: "";
+		  left: 0;
+		  margin: 0 auto;
+		  position: absolute;
+		  right: 0;
+		  width: 0;
+		  z-index: 700;
+		}	
+	}
+
+#client-section{
+	background-color:#7F4C76;
+	padding:80px 0;
+	position: relative;
+	.client-content{
+		@include section-center;
+		h2{
+			font-size: 35px;
+		}
+		p {
+		  font-size: 17px;
+		  padding-top: 25px;
+		}
+	}
+	.client-image{
+		@include section-center;
+		.client-images{		
+			  text-transform: capitalize;
+			  font-weight: bold;
+			  margin:80px 0;
+			  .boximg {
+				 	width:100%;
+				}
+				p{
+					font-size:10px;
+					font-weight: normal;
+				}
+			}
+		}
+		&:after{
+		  border-left: 40px solid rgba(0, 0, 0, 0);
+		  border-right: 40px solid rgba(0, 0, 0, 0);
+		  border-top: 40px solid #7F4C76;
+		  bottom: -40px;
+		  content: "";
+		  left: 0;
+		  margin: 0 auto;
+		  position: absolute;
+		  right: 0;
+		  width: 0;
+		  z-index: 700;
+		}	
+	}
+

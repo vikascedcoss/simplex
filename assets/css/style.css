@@ -1,13 +1,14 @@
+@font-face {
+  font-family: "signika";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/signika/Signika-Regular.eot?") format("eot"), url("../fonts/signika/Signika-Regular.woff2") format("woff2"), url("../fonts/signika/Signika-Regular.woff") format("woff"); }
 body, html {
   margin: 0;
   padding: 0;
-  color: #fff; }
-@font-face {
-  body, html {
-    font-family: "Signika";
-    src: url("../fonts/signika/Signika-Regular.eot");
-    font-weight: normal;
-    font-style: normal; } }
+  color: #fff;
+  font-family: signika; }
+
 #navigation {
   background-color: #334960;
   position: fixed;
@@ -109,10 +110,13 @@ body, html {
       text-transform: capitalize;
       font-weight: bold;
       margin: 80px 0; }
+      #professional-section .professional-image .professional-images .professional-image-wrapper {
+        padding: 20px; }
       #professional-section .professional-image .professional-images .boximg {
         border: 3px solid #f4948b;
         border-radius: 50%;
-        margin-top: 20px; }
+        margin-top: 20px;
+        width: 100%; }
         #professional-section .professional-image .professional-images .boximg:hover {
           box-shadow: 0 0 10px #fff;
           color: #fff;
@@ -138,6 +142,96 @@ body, html {
     border-left: 40px solid transparent;
     border-right: 40px solid transparent;
     border-top: 40px solid #F17C72;
+    bottom: -40px;
+    content: "";
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    width: 0;
+    z-index: 700; }
+
+#service-section {
+  background-color: #32AC97;
+  padding: 80px 0;
+  position: relative; }
+  #service-section .service-content {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto; }
+    #service-section .service-content h2 {
+      font-size: 35px; }
+    #service-section .service-content p {
+      font-size: 17px;
+      padding-top: 25px; }
+  #service-section .service-image {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto; }
+    #service-section .service-image .service-images {
+      background-color: #46DCC7;
+      border: 3px solid #99D6CB;
+      text-transform: capitalize;
+      font-weight: bold;
+      margin: 80px 0; }
+      #service-section .service-image .service-images .service-image-wrapper {
+        padding: 20px; }
+      #service-section .service-image .service-images .boximg {
+        border: 3px solid #C8F5EE;
+        border-radius: 50%;
+        margin-top: 20px;
+        background-color: #334960;
+        width: 100%; }
+        #service-section .service-image .service-images .boximg:hover {
+          box-shadow: 0 0 15px #fff;
+          color: #fff;
+          transition: all 100ms linear 0s; }
+      #service-section .service-image .service-images p {
+        font-size: 10px;
+        font-weight: normal; }
+  #service-section:after {
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-top: 40px solid #32AC97;
+    bottom: -40px;
+    content: "";
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    width: 0;
+    z-index: 700; }
+
+#client-section {
+  background-color: #7F4C76;
+  padding: 80px 0;
+  position: relative; }
+  #client-section .client-content {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto; }
+    #client-section .client-content h2 {
+      font-size: 35px; }
+    #client-section .client-content p {
+      font-size: 17px;
+      padding-top: 25px; }
+  #client-section .client-image {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto; }
+    #client-section .client-image .client-images {
+      text-transform: capitalize;
+      font-weight: bold;
+      margin: 80px 0; }
+      #client-section .client-image .client-images .boximg {
+        width: 100%; }
+      #client-section .client-image .client-images p {
+        font-size: 10px;
+        font-weight: normal; }
+  #client-section:after {
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-top: 40px solid #7F4C76;
     bottom: -40px;
     content: "";
     left: 0;

@@ -6,13 +6,30 @@
 	font-size:20px;
 }
 
-@mixin main-fonts($font-family, $file-path, $weight: normal, $style: normal, $asset-pipeline: false ) {
-  @font-face {
-    font-family: $font-family;
-    src: url($file-path);
-    font-weight: $weight;
-	font-style: $style;
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
+	$src: null;
 
+	$extmods: (
+		eot: "?",
+		svg: "#" + str-replace($name, " ", "_")
+	);
+
+	$formats: (
+		otf: "opentype",
+		ttf: "truetype"
+	);
+
+	@each $ext in $exts {
+		$extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+		$format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+		$src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+	}
+
+	@font-face {
+		font-family: quote($name);
+		font-style: $style;
+		font-weight: $weight;
+		src: $src;
 	}
 }
 
@@ -36,4 +53,11 @@
 	max-width:960px;
 	width:100%;
 	margin:0 auto;
+}
+
+@mixin service-image{
+	border: 3px solid #C8F5EE;
+	border-radius: 50%;
+	margin-top: 20px;
+	background-color:#334960;
 }
