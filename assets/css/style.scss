@@ -72,11 +72,11 @@ body,html{
 		@include section-center;
 		h2{
 			font-size: 35px;
+			line-height: 50px;
 			a:first-child{
 				background-color:#2AAE96;
 				text-decoration: none;
 				color:#fff;
-				padding:0 3px;
 				&:hover{
 					color:#334960;
 					text-decoration:none;
@@ -87,7 +87,6 @@ body,html{
 				background-color:#7F4C76;
 				text-decoration: none;
 				color:#fff;
-				padding:0 3px;
 				&:hover{
 					color:#334960;
 					text-decoration:none;
@@ -295,5 +294,74 @@ body,html{
 }
 
 /*=====  End of Section Footer  ======*/
+
+/*=============================================
+=            Section Media Queries            =
+=============================================*/
+
+@media #{$nav-section} {
+	#navigation{
+		a.menus{
+			font-size:16px;
+			padding:10px;
+		}
+	}
+	.header-content{
+		h1{
+			font-size:30px;
+		}
+	}
+}
+
+@media #{$social-logo}{
+	#header {
+		ul{
+			margin:50px auto;
+			.menus{
+				height: 40px;
+				line-height: 40px;
+				width: 40px;
+				span{
+					font-size:20px;
+				}
+			}
+		}
+
+	}
+	#navigation{
+		.navigation-row{
+			ul{
+				display: none;
+
+			}
+		}
+	}
+	#professional-section{
+		.professional-image{
+			.professional-images{
+				margin:20px 0;
+			}
+		}
+	}
+	#service-section{
+		.service-image{
+			.service-images{
+				margin:20px 0;
+			}
+		}
+	}
+	#client-section{
+		.client-image{
+			.client-images{
+				margin:20px 0;
+			}
+		}
+	}
+
+
+}
+
+/*=====  End of Section Media Queries  ======*/
+
 
 
