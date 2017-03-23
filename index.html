@@ -4,8 +4,8 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Title Page</title>
-
+	<title>SIMPLEX</title>
+	
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -31,11 +31,11 @@
 						</div>
 						<div class="col-lg-8 col-md-8 col-sm-6 col-xs-6 text-right">
 							<ul class="list-inline">
-								<li><a href="#" class="menus">home</a></li>
-								<li><a href="#" class="menus">about</a></li>
-								<li><a href="#" class="menus">services</a></li>
-								<li><a href="#" class="menus">clients</a></li>
-								<li><a href="#" class="menus">contact</a></li>
+								<li><a href="#" class="menus home_menu">home</a></li>
+								<li><a href="#" class="menus about_menu">about</a></li>
+								<li><a href="#" class="menus service_menu">services</a></li>
+								<li><a href="#" class="menus client_menu">clients</a></li>
+								<li><a href="#" class="menus contact_menu">contact</a></li>
 							</ul>
 						</div>
 					</div>
@@ -369,7 +369,7 @@
 												<form action="" method="">
 													<input type="text" placeholder="Name">
 													<input type="text" placeholder="Email">
-													<textarea name="" id="" cols="30" rows="5" placeholder="Message"></textarea>
+													<textarea name="" id="" cols="30" rows="7" placeholder="Message"></textarea>
 													<button>SUBMIT</button>
 												</form>
 											</div>
@@ -380,13 +380,51 @@
 						</div>
 					</div>
 				</section>
-				<!--====  End of Section Contact  ====-->
 
-				<!-- jQuery -->
-				<script src="//code.jquery.com/jquery.js"></script>
-				<!-- Bootstrap JavaScript -->
-				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-				<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-				<script src="Hello World"></script>
-			</body>
-			</html>
+				<!--====================================
+				=            Section Footer            =
+				=====================================-->
+				
+				<section id="footer">
+					<div class="container">
+						<div class="row footer-row">
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<a href=""><img src="assets/images/footer_logo.png" alt="footer_image"></a>
+								<span>&copy; 2013 Privacy Policy</span>
+								<p>Website designed by TemplateMonster.com<br>
+								Professional free website templates at www.websitetemplatesonline.com. www.getjoomlatemplatesfree.com - free Joomla templates for websites.</p>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<!--====  End of Section Footer  ====-->
+
+					<!--====  End of Section Contact  ====-->
+
+					<!-- jQuery -->
+					<script src="//code.jquery.com/jquery.js"></script>
+					<!-- Bootstrap JavaScript -->
+					<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+					<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+					<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+					<script>
+						$(".about_menu").click(function() {
+							$('html, body').animate({
+								scrollTop: $("#professional-section").offset().top }, 1000);
+						});
+						$(".service_menu").click(function() {
+							$('html, body').animate({
+								scrollTop: $("#service-section").offset().top }, 1000);
+						});
+						$(".client_menu").click(function() {
+							$('html, body').animate({
+								scrollTop: $("#client-section").offset().top }, 1000);
+						});
+						$(".contact_menu").click(function() {
+							$('html, body').animate({
+								scrollTop: $("#contact-section").offset().top }, 1000);
+						});
+					</script>
+				</body>
+				</html>

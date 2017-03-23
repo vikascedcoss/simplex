@@ -34,8 +34,8 @@ body, html {
 ======================================*/
 #header {
   background-color: #334960;
-  padding: 80px 0;
-  position: relative; }
+  position: relative;
+  padding: 80px 0; }
   #header .header-content {
     max-width: 960px;
     width: 100%;
@@ -61,14 +61,13 @@ body, html {
       border-radius: 50%;
       border: 2px solid #fff; }
       #header ul .menus:hover {
-        transform: scale(1.1);
         transition: 100ms linear all;
         box-shadow: 0 0 15px #fff;
         color: #fff; }
   #header:after {
+    border-top: 40px solid #334960;
     border-left: 40px solid transparent;
     border-right: 40px solid transparent;
-    border-top: 40px solid #334960;
     bottom: -40px;
     content: "";
     left: 0;
@@ -84,8 +83,8 @@ body, html {
 ============================================*/
 #professional-section {
   background-color: #F17C72;
-  padding: 80px 0;
-  position: relative; }
+  position: relative;
+  padding: 80px 0; }
   #professional-section .professional-content {
     max-width: 960px;
     width: 100%;
@@ -124,20 +123,30 @@ body, html {
       #professional-section .professional-image .professional-images .professional-image-wrapper {
         padding: 20px; }
       #professional-section .professional-image .professional-images .boximg {
-        border: 3px solid #f4948b;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
         border-radius: 50%;
+        border: 2px solid #fff;
+        border: 3px solid #f4948b;
         margin-top: 20px;
         width: 100%; }
         #professional-section .professional-image .professional-images .boximg:hover {
-          box-shadow: 0 0 10px #fff;
-          color: #fff;
-          transition: all 100ms linear 0s; }
+          transition: 100ms linear all;
+          box-shadow: 0 0 15px #fff;
+          color: #fff; }
       #professional-section .professional-image .professional-images .socialgroup {
         border-top: 3px solid #2aae96;
         padding: 10px 0; }
         #professional-section .professional-image .professional-images .socialgroup .socialicon {
-          border: 1px solid #fff;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%;
           border-radius: 50%;
+          border: 2px solid #fff;
+          border: 1px solid #fff;
           color: #fff;
           display: inline-block;
           height: 25px;
@@ -145,14 +154,13 @@ body, html {
           margin: 0 0 0 5px;
           width: 25px; }
           #professional-section .professional-image .professional-images .socialgroup .socialicon:hover {
-            box-shadow: 0 0 10px #fff;
-            color: #fff;
-            transform: scale(1.1);
-            transition: all 100ms linear 0s; }
+            transition: 100ms linear all;
+            box-shadow: 0 0 15px #fff;
+            color: #fff; }
   #professional-section:after {
+    border-top: 40px solid #F17C72;
     border-left: 40px solid transparent;
     border-right: 40px solid transparent;
-    border-top: 40px solid #F17C72;
     bottom: -40px;
     content: "";
     left: 0;
@@ -168,8 +176,8 @@ body, html {
 =======================================*/
 #service-section {
   background-color: #32AC97;
-  padding: 80px 0;
-  position: relative; }
+  position: relative;
+  padding: 80px 0; }
   #service-section .service-content {
     max-width: 960px;
     width: 100%;
@@ -198,16 +206,18 @@ body, html {
         background-color: #334960;
         width: 100%; }
         #service-section .service-image .service-images .boximg:hover {
+          transition: 100ms linear all;
           box-shadow: 0 0 15px #fff;
-          color: #fff;
-          transition: all 100ms linear 0s; }
+          color: #fff; }
       #service-section .service-image .service-images p {
-        font-size: 10px;
-        font-weight: normal; }
+        color: #000;
+        font-size: 12px;
+        font-weight: normal;
+        color: #fff; }
   #service-section:after {
+    border-top: 40px solid #32AC97;
     border-left: 40px solid transparent;
     border-right: 40px solid transparent;
-    border-top: 40px solid #32AC97;
     bottom: -40px;
     content: "";
     left: 0;
@@ -223,34 +233,32 @@ body, html {
 ======================================*/
 #client-section {
   background-color: #7F4C76;
-  padding: 80px 0;
-  position: relative; }
+  position: relative;
+  padding: 80px 0; }
   #client-section .client-content {
     max-width: 960px;
     width: 100%;
     margin: 0 auto; }
     #client-section .client-content h2 {
       font-size: 35px; }
-    #client-section .client-content p {
-      font-size: 17px;
-      padding-top: 25px; }
   #client-section .client-image {
     max-width: 960px;
     width: 100%;
     margin: 0 auto; }
     #client-section .client-image .client-images {
       text-transform: capitalize;
-      font-weight: bold;
       margin: 80px 0; }
       #client-section .client-image .client-images .boximg {
         width: 100%; }
       #client-section .client-image .client-images p {
-        font-size: 10px;
-        font-weight: normal; }
+        color: #000;
+        font-size: 12px;
+        font-weight: normal;
+        color: #fff; }
   #client-section:after {
+    border-top: 40px solid #7F4C76;
     border-left: 40px solid transparent;
     border-right: 40px solid transparent;
-    border-top: 40px solid #7F4C76;
     bottom: -40px;
     content: "";
     left: 0;
@@ -266,8 +274,8 @@ body, html {
 =======================================*/
 #contact-section {
   background-color: #3F9FC9;
-  padding: 80px 0;
-  position: relative; }
+  position: relative;
+  padding: 80px 0; }
   #contact-section .contact-content {
     max-width: 960px;
     width: 100%;
@@ -288,9 +296,7 @@ body, html {
       font-weight: normal; }
       #contact-section .contact-content-wrapper .contact-address .contact-numbers {
         margin-top: 30px;
-        margin-bottom: 0;
-        font-size: 12px;
-        font-weight: normal; }
+        margin-bottom: 0; }
         #contact-section .contact-content-wrapper .contact-address .contact-numbers dt {
           width: 70px;
           float: left;
@@ -310,17 +316,29 @@ body, html {
       width: 99%;
       color: #000;
       font-size: 12px;
-      font-weight: normal; }
+      font-weight: normal;
+      resize: none; }
     #contact-section .contact-content-wrapper .contact-form button {
-      display: block;
-      margin: 10px auto 0;
-      color: #fff;
+      color: #000;
       font-size: 12px;
       font-weight: normal;
+      display: block;
+      margin: 10px auto 0;
       background-color: #F17C72;
       border: none;
       padding: 3px 20px; }
 
 /*=====  End of Section contact  ======*/
+/*======================================
+=            Section Footer            =
+======================================*/
+#footer {
+  background-color: #334960; }
+  #footer .footer-row {
+    font-size: 12px;
+    color: #fff;
+    padding: 30px 0; }
+
+/*=====  End of Section Footer  ======*/
 
 /*# sourceMappingURL=style.css.map */

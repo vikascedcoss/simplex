@@ -6,18 +6,36 @@
 	font-size:20px;
 }
 
+@mixin section-position{
+	position:relative;
+	padding:80px 0;
+}
+
+@mixin triangle($color){
+	border-top: 40px solid $color;
+	border-left: 40px solid rgba(0, 0, 0, 0);
+	border-right: 40px solid rgba(0, 0, 0, 0);
+	bottom: -40px;
+	content: "";
+	left: 0;
+	margin: 0 auto;
+	position: absolute;
+	right: 0;
+	width: 0;
+	z-index: 700;
+}
 @mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
 	$src: null;
 
 	$extmods: (
 		eot: "?",
 		svg: "#" + str-replace($name, " ", "_")
-	);
+		);
 
 	$formats: (
 		otf: "opentype",
 		ttf: "truetype"
-	);
+		);
 
 	@each $ext in $exts {
 		$extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
@@ -42,11 +60,20 @@
 	border:2px solid #fff;
 }
 
+@mixin social-icon-style{
+	border: 1px solid #fff;
+	color: #fff;
+	display: inline-block;
+	height: 25px;
+	line-height: 25px;
+	margin: 0 0 0 5px;
+	width: 25px;
+}
+
 @mixin animation-shadow{
-  transform: scale(1.1);
-  transition: 100ms linear all;
-  box-shadow: 0 0 15px #fff;
-  color:#fff;
+	transition: 100ms linear all;
+	box-shadow: 0 0 15px #fff;
+	color:#fff;
 }
 
 @mixin section-center{
@@ -60,4 +87,24 @@
 	border-radius: 50%;
 	margin-top: 20px;
 	background-color:#334960;
+}
+
+@mixin contact-social-media{
+	float: left;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+
+@mixin form-content{
+	color: #000;
+	font-size: 12px;
+	font-weight: normal;
+
+}
+
+@mixin footer-style{
+	font-size:12px;
+	color:#fff;
+	padding:30px 0;
 }
